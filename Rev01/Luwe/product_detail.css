@@ -1,0 +1,160 @@
+/*--  css --*/
+@font-face{
+    font-family: 'montserrat_01';
+    src:url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'bebasNeue';
+    src:url('../fonts/BebasNeue-Regular.woff') format('woff'),
+    url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: 'BigNoodle';
+    src:url('../fonts/Objective-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body{
+    background: grey;
+  }
+  
+  *{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .bp-header{
+    background: black;
+  }
+  
+  .sidebar{
+    position: absolute;
+    width: 17vw;
+    height: 100%;
+    background:#1c1d22;
+  }
+  .sidebar header{
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1d22;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 1.4vw;
+    color: #bdbdbd;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid grey;
+    font-family: "BebasNeue";
+  }
+  ul li:hover a{
+    color:rgb(30, 228, 30);
+  }
+  ul li:active a{
+    color: grey;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+/*---Detail Menu--*/
+
+
+.carousel-indicators{
+  height: 150px;
+}
+.carousel-indicators li, .carousel-indicators li.active{
+  bottom: -155px;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  position: relative;
+  margin: 10px;           
+}
+.carousel-indicators img{
+  bottom: -100px;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;            
+}
+.carousel-caption h5{
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  font-family: BigNoodle;
+}
+.product-meta-data h6{
+  color: black;
+  font-weight: 800;
+  font-size: 3vw;
+  font-family: bebasNeue;
+  font-stretch: expanded;
+}
+.open_close h1{
+  color: black;
+  text-align: left;
+  font-size: 2vw;
+}
+.open_close span{
+  font-size: 1.5vw;
+  color: red;
+  text-align: center;
+}
+.form-group label{
+  color: black;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+
+
+@media (max-width: 575.98px) { 
+  .carousel-inner{
+    margin-left : 50px;
+  }
+  .carousel-indicators{
+    margin-left: 50px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .carousel-inner{
+    
+  }
+  .carousel-inner img{
+    
+  }  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+
